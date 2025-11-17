@@ -1,0 +1,3 @@
+org.springframework.test.context.ContextCustomizerFactory = \
+    com.travel.hub.config.SqlTestContainersSpringContextCustomizerFactory,com.\
+    travel.hub.config.RedisTestContainersSpringContextCustomizerFactory
