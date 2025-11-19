@@ -32,8 +32,8 @@ spring:
       indent-output: true
   datasource:
     type: com.zaxxer.hikari.HikariDataSource
-    url: jdbc:postgresql://localhost:5432/travelHub
-    username: travelHub
+    url: jdbc:postgresql://localhost:5432/travel_hub
+    username: travelhub
     password:
     hikari:
       poolName: Hikari
