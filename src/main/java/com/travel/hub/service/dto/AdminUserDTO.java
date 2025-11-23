@@ -3,6 +3,7 @@ package com.travel.hub.service.dto;
 import com.travel.hub.config.Constants;
 import com.travel.hub.domain.Authority;
 import com.travel.hub.domain.User;
+import jakarta.persistence.Column;
 import jakarta.validation.constraints.*;
 import java.io.Serializable;
 import java.time.Instant;
@@ -32,6 +33,9 @@ public class AdminUserDTO implements Serializable {
     @Email
     @Size(min = 5, max = 254)
     private String email;
+
+    @Size(max = 100)
+    private String phone;
 
     @Size(max = 256)
     private String imageUrl;
@@ -109,6 +113,14 @@ public class AdminUserDTO implements Serializable {
 
     public void setEmail(String email) {
         this.email = email;
+    }
+
+    public String getPhone() {
+        return phone;
+    }
+
+    public void setPhone(String phone) {
+        this.phone = phone;
     }
 
     public String getImageUrl() {

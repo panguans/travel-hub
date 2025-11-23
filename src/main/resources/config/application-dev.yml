@@ -42,7 +42,7 @@ spring:
     # Remove 'faker' if you do not want the sample data to be loaded automatically
     contexts: dev, faker
     # make sure that this flag is set to false if you don't want to lose your data
-    # drop-first: true
+    drop-first: true
   mail:
     host: localhost
     port: 25
