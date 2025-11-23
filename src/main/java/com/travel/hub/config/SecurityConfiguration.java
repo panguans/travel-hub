@@ -70,8 +70,7 @@ public class SecurityConfiguration {
                     .requestMatchers(mvc.pattern("/api/account/reset-password/init")).permitAll()
                     .requestMatchers(mvc.pattern("/api/account/reset-password/finish")).permitAll()
                     .requestMatchers(mvc.pattern("/api/admin/**")).hasAuthority(AuthoritiesConstants.ADMIN)
-                    // TODO Hamza: this is just an example of our custom authorities (to be removed later)
-                    .requestMatchers(mvc.pattern("/api/agency/**")).hasAuthority(AuthoritiesConstants.AGENCY)
+                    .requestMatchers(mvc.pattern(HttpMethod.POST,"/api/agencies")).permitAll() // create a new agency
                     .requestMatchers(mvc.pattern("/api/**")).authenticated()
                     .requestMatchers(mvc.pattern("/v3/api-docs/**")).hasAuthority(AuthoritiesConstants.ADMIN)
                     .requestMatchers(mvc.pattern("/management/health")).permitAll()

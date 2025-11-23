@@ -1,0 +1,42 @@
+{
+  "annotations": {
+    "changelogDate": "20251123192709"
+  },
+  "dto": "mapstruct",
+  "fields": [
+    {
+      "fieldName": "description",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "address",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "website",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "ratingAvg",
+      "fieldType": "Double"
+    }
+  ],
+  "jpaMetamodelFiltering": false,
+  "name": "Agency",
+  "pagination": "pagination",
+  "readOnly": false,
+  "relationships": [
+    {
+      "id": true,
+      "otherEntityField": "login",
+      "otherEntityName": "user",
+      "otherEntityRelationshipName": "user_agency",
+      "relationshipName": "user_agency",
+      "relationshipSide": "left",
+      "relationshipType": "one-to-one",
+      "relationshipValidateRules": []
+    }
+  ],
+  "searchEngine": "no",
+  "service": "serviceImpl"
+}

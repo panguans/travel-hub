@@ -74,6 +74,7 @@ public class CacheConfiguration {
             createCache(cm, com.travel.hub.repository.UserRepository.USERS_BY_LOGIN_CACHE, jcacheConfiguration);
             createCache(cm, com.travel.hub.repository.UserRepository.USERS_BY_EMAIL_CACHE, jcacheConfiguration);
             createCache(cm, com.travel.hub.domain.Authority.class.getName(), jcacheConfiguration);
+            createCache(cm, com.travel.hub.domain.Agency.class.getName(), jcacheConfiguration);
             // jhipster-needle-redis-add-entry
         };
     }

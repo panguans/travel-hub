@@ -1,0 +1,28 @@
+{
+  "travelHubApp": {
+    "agency": {
+      "home": {
+        "title": "Agencies",
+        "refreshListLabel": "تحديث القائمة",
+        "createLabel": "إنشاء Agency جديد",
+        "createOrEditLabel": "إنشاء أو تعديل Agency",
+        "notFound": "لم يتم العثور على Agencies"
+      },
+      "created": "Agency جديد تم إنشاؤه بالمعرف {{ param }}",
+      "updated": "Agency تم تحديثه بالمعرف {{ param }}",
+      "deleted": "Agency تم حذفه بالمعرف {{ param }}",
+      "delete": {
+        "question": "هل أنت متأكد أنك تريد حذف Agency {{ id }}؟"
+      },
+      "detail": {
+        "title": "Agency"
+      },
+      "id": "ID",
+      "description": "Description",
+      "address": "Address",
+      "website": "Website",
+      "ratingAvg": "Rating Avg",
+      "user_agency": "User Agency"
+    }
+  }
+}
